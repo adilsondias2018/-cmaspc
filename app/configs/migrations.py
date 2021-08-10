@@ -6,5 +6,4 @@ from .database import db
 
 def init_app(app):
 
-
     Migrate(app, app.db, compare_type=True)

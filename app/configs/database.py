@@ -8,7 +8,4 @@ def init_app(app)-> None:
 
     db.init_app(app)
     app.db = db
-
-    
-
-
+    from app.models.cadastro_model import Cadastro

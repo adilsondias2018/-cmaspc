@@ -128,7 +128,7 @@
             <div class=" card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class=" card btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     EIXO 1: Por que defender a proteção social não-contributiva?
                   </button>
                 </h5>
@@ -229,15 +229,16 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <div class="form-row">
+            <form action ="cadastrar" method="POST">
+            <div  class="form-row">
               
               <div class="col-md-4 mb-3">
                 <label for="validationDefault01">Nome</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" required>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" name="nome" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="validationDefault02">Data Nascimento</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Data Nascimento" required>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Data Nascimento" name="dataNascimento" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="validationDefaultUsername">email</label>
@@ -245,28 +246,28 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
                   <div class="input-group-prepend">
                    
                   </div>
-                  <input type="email" class="form-control" id="validationDefaultUsername" placeholder="email" aria-describedby="inputGroupPrepend2" required>
+                  <input type="email" class="form-control" id="validationDefaultUsername" placeholder="email" aria-describedby="inputGroupPrepend2" name="email" required>
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <label for="validationDefault03">CPF</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="CPF" required>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="CPF" name="cpf" required>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationDefault04">Identidade</label>
-                <input type="text" class="form-control" id="validationDefault04" placeholder="Identidade" required>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="Identidade" name="identidade" required>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="validationDefault05">Telefone</label>
-                <input type='phone' class="form-control" id="validationDefault05" placeholder="Telefone" required>
+                <input type='phone' class="form-control" id="validationDefault05" placeholder="Telefone" name="telefone" required>
               </div>
             </div>
             
             <div class="form-row">
               <div class="col-md-4 mb-3">
-            <select class="form-control " >
+            <select class="form-control " name="segmentoAtuacao">
               <option selected>Segmento de atuação</option>
               <option value="1">Sociedade Civil</option>
               <option value="2">Entidade de Assistência Social</option>
@@ -275,7 +276,7 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
             </select>
           </div>
           <div class="col-md-4 mb-3">
-            <select class="form-control">
+            <select class="form-control" name="tipoSegmento">
               <option selected>Tipo Segmento</option>
               <option value="1">Rede pública </option>
               <option value="2">Rede Privada</option>
@@ -284,7 +285,7 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
             </select>
            </div>
            <div class="col-md-4 mb-3">
-            <select class="form-control">
+            <select class="form-control" name="participacao">
               <option selected>Forma Participação</option>
               <option value="1">On-line ( por esta Plataforma) </option>
               <option value="2">Cras Alterosa - 7 Vagas</option>
@@ -297,13 +298,13 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
               </option>
               <option value="7">Cras San Genaro - 6 Vagas
               </option>
-              <option value="7">Cras Sevilha - 6 Vagas
+              <option value="8">Cras Sevilha - 6 Vagas
               </option>
-              <option value="7">Cras Urca/Jardim Primavera - 10
+              <option value="9">Cras Urca/Jardim Primavera - 10
               </option>
-              <option value="7">VagasCras Veneza - 6 
+              <option value="10">VagasCras Veneza - 6 
               </option>
-              <option value="7">VagasAuditório SMDSC - 15 vagas
+              <option value="11">VagasAuditório SMDSC - 15 vagas
               </option>
             </select>
            </div>
@@ -316,13 +317,13 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
               <fieldset>
               <legend>É conselheiro no Conselho Municipal de Assistência Social</legend>
               <div class="col-md-3 custom-control custom-radio custom-control-inline">
-                <input class="form-check-input"  type="radio" name="optionradio1" id="contactChoice1"
-                 name="contact" value="conselheiro" checked>
+                <input class="form-check-input"  type="radio" name="conselheiro" id="contactChoice1"
+                value="sim" checked>
                 <label class="custom-control-label" for="contactChoice1">Sim</label>
               </div>
               <div class="col-md-3 custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="radio" name="optionradio1"  id="contactChoice2"
-                 name="contact" value="conselheiro" >
+                <input class="form-check-input" type="radio" name="conselheiro"  id="contactChoice2"
+                value="não" >
                 <label class="custom-control-label" for="contactChoice1">Não</label>
               </div>
             </fieldset>
@@ -335,13 +336,13 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
               <legend>Quer ser candidato a representante do Município na Conferência Regional?</legend>
 
               <div class="col-md-3 custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="radio" name="optionradio2"  id="contactChoice1"
-                 name="contact" value="candidato" checked>
+                <input class="form-check-input" type="radio" name="candidato"  id="contactChoice1"
+                value="sim" checked>
                 <label class="custom-control-label" for="contactChoice1">Sim</label>
               </div>
               <div class="col-md-3 custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="radio" name="optionradio2"  id="contactChoice1"
-                 name="contact" value="candidato" checked>
+                <input class="form-check-input" type="radio" name="candidato"  id="contactChoice1"
+                  value="não" checked>
                 <label class="custom-control-label" for="contactChoice1">Não</label>
               </div>
             </fieldset>
@@ -356,29 +357,10 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
 
               <div class="custom-control custom-radio custom-control-inline">
                 <input class="form-check-input" type="checkbox" id="contactChoice1"
-                 name="contact" value="candidato" >
-                <label class="custom-control-label" for="contactChoice1">Eixo 1</label>
+                 name="eixos" value="todos" >
+                <label class="custom-control-label" for="contactChoice1">Eixo 1 | Eixo 2 | Eixo 3 | Eixo 4 | Eixo 5 </label>
               </div>
-              <div class=" custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="checkbox"   id="contactChoice1"
-                 name="contact" value="candidato" >
-                <label class="custom-control-label" for="contactChoice1">Eixo 2</label>
-              </div>
-              <div class=" custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="checkbox"   id="contactChoice1"
-                 name="contact" value="candidato" >
-                <label class="custom-control-label" for="contactChoice1">Eixo 3</label>
-              </div>
-              <div class=" custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="checkbox"   id="contactChoice1"
-                 name="contact" value="candidato" >
-                <label class="custom-control-label" for="contactChoice1">Eixo 4</label>
-              </div>
-              <div class=" custom-control custom-radio custom-control-inline">
-                <input class="form-check-input" type="checkbox"   id="contactChoice1"
-                 name="contact" value="candidato" >
-                <label class="custom-control-label" for="contactChoice1">Eixo 5</label>
-              </div>
+              
             </fieldset>
           </div>
               
@@ -390,7 +372,7 @@ de renda, gênero, raça, etnia, desastres, emergências dentre outras.
 
             <div class="form-group">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <input class="form-check-input" type="checkbox" name="termo" value="aceito" id="invalidCheck2" required>
                 <label class="form-check-label" for="invalidCheck2">
                   Aceite os termos e condições
                 </label>
