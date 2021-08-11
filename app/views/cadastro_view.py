@@ -17,13 +17,22 @@ def get_login():
 @bp.route('/login', methods=['POST'])
 def post_login():
 
-        return render_template('usuario.html')
-        
-@bp.route('/usuario')
-def get_usuario():
-        
+        data = {"email": request.form['email'], "cpf": request.form['cpf']}
+        print(data['cpf'])
 
-        return render_template('usuario.html')
+        user: dict = Cadastro.query.filter_by(cpf=data['cpf']).first() 
+        print(user)       
+
+        if user:
+                return render_template('usuario.html', user=user)
+
+        return render_template('not_found.html')
+
+
+# @bp.route('/usuario')
+# def get_usuario():        
+
+#         return render_template('usuario.html')
 
 
 @bp.route('/cadastrar', methods=['POST'])
