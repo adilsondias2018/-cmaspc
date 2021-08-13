@@ -38,7 +38,7 @@ def post_login():
 @bp.route('/cadastrar', methods=['POST'])
 def post():
 
-        data = {"nome": request.form['nome'], "dataNascimento": request.form['dataNascimento'],"email": request.form['email'], "cpf": request.form['cpf'],"identidade": request.form['identidade'], "telefone": request.form['telefone'], "segmentoAtuacao": request.form['segmentoAtuacao'],"tipoSegmento": request.form['tipoSegmento'],"participacao": request.form['participacao'],"conselheiro": request.form['conselheiro'], "candidato": request.form['candidato'], "eixos": request.form['eixos'], "termo": request.form['termo']}
+        data = {"nome": request.form['nome'], "dataNascimento": request.form['dataNascimento'],"email": request.form['email'], "cpf": request.form['cpf'],"identidade": request.form['identidade'], "telefone": request.form['telefone'], "segmentoAtuacao": request.form['segmentoAtuacao'],"tipoSegmento": request.form['tipoSegmento'],"participacao": request.form['participacao'],"conselheiro":request.form['conselheiro'], "candidato": request.form['candidato'],"eixos": request.form['eixos'], "termo": request.form['termo']}
 
         cadastro_usuario(data)        
         

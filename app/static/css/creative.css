@@ -237,4 +237,9 @@ header.masthead {
 .bg-dark {
   background-color: #343a40 !important; }
 
+.acordion {
+  padding: 1rem 2rem;
+  color: #F05F40;
+  font-weight: 600; }
+
 /*# sourceMappingURL=creative.css.map */
